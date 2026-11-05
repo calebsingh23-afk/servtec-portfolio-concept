@@ -10,25 +10,25 @@
         "overflow": false,
         "copy": {
           "x": 57.59375,
-          "y": 238.75,
+          "y": 183.96875,
           "right": 675.46875,
-          "bottom": 672.359375,
+          "bottom": 653.546875,
           "width": 617.875,
-          "height": 433.609375
+          "height": 469.578125
         },
         "bike": {
           "x": 734.7955322265625,
-          "y": 242.5343475341797,
+          "y": 205.7374725341797,
           "right": 1391.8126220703125,
-          "bottom": 686.8060150146484,
+          "bottom": 650.0091400146484,
           "width": 657.01708984375,
           "height": 444.27166748046875
         },
         "action": {
           "x": 57.59375,
-          "y": 560.375,
+          "y": 541.5625,
           "right": 285.9375,
-          "bottom": 625.5625,
+          "bottom": 606.75,
           "width": 228.34375,
           "height": 65.1875
         },
@@ -45,7 +45,7 @@
       "name": "desktop: usable first-screen quote action",
       "pass": true,
       "details": {
-        "bottom": 625.5625,
+        "bottom": 606.75,
         "viewport": 900
       }
     },
@@ -60,25 +60,25 @@
         "overflow": false,
         "copy": {
           "x": 30.71875,
-          "y": 189.765625,
+          "y": 125,
           "right": 356.828125,
-          "bottom": 603.8125,
+          "bottom": 594.984375,
           "width": 326.109375,
-          "height": 414.046875
+          "height": 469.984375
         },
         "bike": {
           "x": 376.828125,
-          "y": 276.640625,
+          "y": 239.84375,
           "right": 737.265625,
-          "bottom": 516.921875,
+          "bottom": 480.125,
           "width": 360.4375,
           "height": 240.28125
         },
         "action": {
           "x": 30.71875,
-          "y": 441.828125,
+          "y": 433,
           "right": 240.765625,
-          "bottom": 503.015625,
+          "bottom": 494.1875,
           "width": 210.046875,
           "height": 61.1875
         },
@@ -95,7 +95,7 @@
       "name": "tablet: usable first-screen quote action",
       "pass": true,
       "details": {
-        "bottom": 503.015625,
+        "bottom": 494.1875,
         "viewport": 1024
       }
     },
@@ -110,25 +110,25 @@
         "overflow": false,
         "copy": {
           "x": 20,
-          "y": 171.59375,
+          "y": 114,
           "right": 300,
-          "bottom": 514.59375,
+          "bottom": 512.9375,
           "width": 280,
-          "height": 343
+          "height": 398.9375
         },
         "bike": {
           "x": 20,
-          "y": 558.640625,
+          "y": 556.984375,
           "right": 300,
-          "bottom": 745.296875,
+          "bottom": 743.640625,
           "width": 280,
           "height": 186.65625
         },
         "action": {
           "x": 20,
-          "y": 403.40625,
+          "y": 401.75,
           "right": 214.046875,
-          "bottom": 464.59375,
+          "bottom": 462.9375,
           "width": 194.046875,
           "height": 61.1875
         },
@@ -145,7 +145,7 @@
       "name": "narrow-mobile: usable first-screen quote action",
       "pass": true,
       "details": {
-        "bottom": 464.59375,
+        "bottom": 462.9375,
         "viewport": 720
       }
     },
@@ -160,25 +160,25 @@
         "overflow": false,
         "copy": {
           "x": 20,
-          "y": 171.59375,
+          "y": 114,
           "right": 370,
-          "bottom": 445.8125,
+          "bottom": 424.1875,
           "width": 350,
-          "height": 274.21875
+          "height": 310.1875
         },
         "bike": {
           "x": 20,
-          "y": 493.859375,
+          "y": 472.234375,
           "right": 370,
-          "bottom": 727.1875,
+          "bottom": 705.5625,
           "width": 350,
           "height": 233.328125
         },
         "action": {
           "x": 20,
-          "y": 384.625,
+          "y": 363,
           "right": 214.046875,
-          "bottom": 445.8125,
+          "bottom": 424.1875,
           "width": 194.046875,
           "height": 61.1875
         },
@@ -195,7 +195,7 @@
       "name": "mobile: usable first-screen quote action",
       "pass": true,
       "details": {
-        "bottom": 445.8125,
+        "bottom": 424.1875,
         "viewport": 844
       }
     },
@@ -210,25 +210,25 @@
         "overflow": false,
         "copy": {
           "x": 33.75,
-          "y": 165.703125,
+          "y": 110.921875,
           "right": 393.078125,
-          "bottom": 383.890625,
+          "bottom": 365.078125,
           "width": 359.328125,
-          "height": 218.1875
+          "height": 254.15625
         },
         "bike": {
           "x": 413.078125,
-          "y": 144.796875,
+          "y": 108,
           "right": 803.078125,
-          "bottom": 404.796875,
+          "bottom": 368,
           "width": 390,
           "height": 260
         },
         "action": {
           "x": 33.75,
-          "y": 328.703125,
+          "y": 309.890625,
           "right": 225.484375,
-          "bottom": 383.890625,
+          "bottom": 365.078125,
           "width": 191.734375,
           "height": 55.1875
         },
@@ -245,7 +245,7 @@
       "name": "landscape: usable first-screen quote action",
       "pass": true,
       "details": {
-        "bottom": 383.890625,
+        "bottom": 365.078125,
         "viewport": 390
       }
     },
@@ -257,7 +257,7 @@
       "name": "scroll 0: deterministic progress",
       "pass": true,
       "details": {
-        "p": 0.001,
+        "p": 0,
         "label": "Fleet rental",
         "transform": "perspective(1400px) translate3d(2.5%, 1.5%, 0px) rotateY(-3deg) scale(0.965)"
       }
@@ -266,7 +266,7 @@
       "name": "scroll 0.1: deterministic progress",
       "pass": true,
       "details": {
-        "p": 0.101,
+        "p": 0.1,
         "label": "Fleet rental",
         "transform": "perspective(1400px) translate3d(2.5%, 1.5%, 0px) rotateY(-3deg) scale(0.965)"
       }
@@ -275,34 +275,34 @@
       "name": "scroll 0.25: deterministic progress",
       "pass": true,
       "details": {
-        "p": 0.251,
+        "p": 0.25,
         "label": "Fleet rental",
-        "transform": "perspective(1400px) translate3d(2.29351%, 1.37611%, 0px) rotateY(-2.75221deg) scale(0.967891)"
+        "transform": "perspective(1400px) translate3d(2.29564%, 1.37739%, 0px) rotateY(-2.75477deg) scale(0.967861)"
       }
     },
     {
       "name": "scroll 0.5: deterministic progress",
       "pass": true,
       "details": {
-        "p": 0.501,
+        "p": 0.5,
         "label": "Servicing & repairs",
-        "transform": "perspective(1400px) translate3d(1.19566%, 0.717398%, 0px) rotateY(-1.4348deg) scale(0.983261)"
+        "transform": "perspective(1400px) translate3d(1.19934%, 0.719602%, 0px) rotateY(-1.4392deg) scale(0.983209)"
       }
     },
     {
       "name": "scroll 0.75: deterministic progress",
       "pass": true,
       "details": {
-        "p": 0.751,
+        "p": 0.75,
         "label": "Parts & fabrication",
-        "transform": "perspective(1400px) translate3d(0.147444%, 0.0884666%, 0px) rotateY(-0.176933deg) scale(0.997936)"
+        "transform": "perspective(1400px) translate3d(0.1493%, 0.0895801%, 0px) rotateY(-0.17916deg) scale(0.99791)"
       }
     },
     {
       "name": "scroll 0.9: deterministic progress",
       "pass": true,
       "details": {
-        "p": 0.901,
+        "p": 0.9,
         "label": "Parts & fabrication",
         "transform": "perspective(1400px) translate3d(0%, 0%, 0px) rotateY(0deg) scale(1)"
       }
@@ -320,34 +320,34 @@
       "name": "scroll 0.75: deterministic progress",
       "pass": true,
       "details": {
-        "p": 0.751,
+        "p": 0.75,
         "label": "Parts & fabrication",
-        "transform": "perspective(1400px) translate3d(0.147444%, 0.0884666%, 0px) rotateY(-0.176933deg) scale(0.997936)"
+        "transform": "perspective(1400px) translate3d(0.1493%, 0.0895801%, 0px) rotateY(-0.17916deg) scale(0.99791)"
       }
     },
     {
       "name": "scroll 0.5: deterministic progress",
       "pass": true,
       "details": {
-        "p": 0.501,
+        "p": 0.5,
         "label": "Servicing & repairs",
-        "transform": "perspective(1400px) translate3d(1.19566%, 0.717398%, 0px) rotateY(-1.4348deg) scale(0.983261)"
+        "transform": "perspective(1400px) translate3d(1.19934%, 0.719602%, 0px) rotateY(-1.4392deg) scale(0.983209)"
       }
     },
     {
       "name": "scroll 0.25: deterministic progress",
       "pass": true,
       "details": {
-        "p": 0.251,
+        "p": 0.25,
         "label": "Fleet rental",
-        "transform": "perspective(1400px) translate3d(2.29351%, 1.37611%, 0px) rotateY(-2.75221deg) scale(0.967891)"
+        "transform": "perspective(1400px) translate3d(2.29564%, 1.37739%, 0px) rotateY(-2.75477deg) scale(0.967861)"
       }
     },
     {
       "name": "scroll 0: deterministic progress",
       "pass": true,
       "details": {
-        "p": 0.001,
+        "p": 0,
         "label": "Fleet rental",
         "transform": "perspective(1400px) translate3d(2.5%, 1.5%, 0px) rotateY(-3deg) scale(0.965)"
       }
@@ -365,7 +365,7 @@
       "name": "scroll 0: deterministic progress",
       "pass": true,
       "details": {
-        "p": 0.001,
+        "p": 0,
         "label": "Fleet rental",
         "transform": "perspective(1400px) translate3d(2.5%, 1.5%, 0px) rotateY(-3deg) scale(0.965)"
       }
@@ -374,9 +374,9 @@
       "name": "scroll 0.6: deterministic progress",
       "pass": true,
       "details": {
-        "p": 0.601,
+        "p": 0.6,
         "label": "Servicing & repairs",
-        "transform": "perspective(1400px) translate3d(0.705641%, 0.423385%, 0px) rotateY(-0.84677deg) scale(0.990121)"
+        "transform": "perspective(1400px) translate3d(0.708991%, 0.425394%, 0px) rotateY(-0.850789deg) scale(0.990074)"
       }
     },
     {
@@ -387,8 +387,8 @@
       "name": "refresh mid-sequence",
       "pass": true,
       "details": {
-        "p": 0.601,
-        "expected": 0.6007254464285714
+        "p": 0.6,
+        "expected": 0.6
       }
     },
     {
@@ -520,20 +520,26 @@
       "pass": true
     },
     {
-      "name": "honest demo feedback",
+      "name": "draft has the listed recipient and fleet details",
       "pass": true
     },
     {
-      "name": "no submission traffic",
+      "name": "no HTTP submission traffic",
       "pass": true,
-      "details": []
+      "details": [
+        "mailto:info@serv-tec.co.za?subject=ServTec%20enquiry%3A%20Service%20my%20fleet&body=Hello%20ServTec%2C%0D%0A%0D%0AI%20would%20like%20to%20enquire%20about%3A%20Service%20my%20fleet%0D%0A%0D%0AFictional%20enquiry%20for%20interface%20testing.%0D%0A%0D%0AName%3A%20Demo%20User%0D%0A%0D%0AEmail%3A%20demo%40example.com%0D%0A%0D%0AFleet%20size%3A%203"
+      ]
     },
     {
       "name": "no website storage",
       "pass": true
     },
     {
-      "name": "no live company contacts",
+      "name": "workshop contact and directions",
+      "pass": true
+    },
+    {
+      "name": "customer-facing copy",
       "pass": true
     },
     {
@@ -572,7 +578,7 @@
       "name": "delayed-media layout stability",
       "pass": true,
       "details": {
-        "measuredCLS": 0,
+        "measuredCLS": 0.0004432172610435957,
         "delayMs": 700
       }
     },

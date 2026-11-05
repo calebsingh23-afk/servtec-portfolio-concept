@@ -94,8 +94,26 @@ if (form) {
       invalidFields[0].focus();
       return;
     }
-    // Deliberately no fetch, mailto, localStorage, analytics or submission destination.
-    status.textContent = 'Demo complete — your details passed validation. No enquiry was sent and no form data was stored by this website.';
+    const subject = 'ServTec enquiry: ' + fields.service.value;
+    const body = [
+      'Hello ServTec,',
+      '',
+      'I would like to enquire about: ' + fields.service.value,
+      '',
+      fields.message.value.trim(),
+      '',
+      'Name: ' + fields.name.value.trim(),
+      fields.company.value.trim() && 'Company: ' + fields.company.value.trim(),
+      fields.email.value.trim() && 'Email: ' + fields.email.value.trim(),
+      fields.phone.value.trim() && 'Phone: ' + fields.phone.value.trim(),
+      !fields.fleet.disabled && fields.fleet.value && 'Fleet size: ' + fields.fleet.value
+    ].filter(line => line !== false).join('\r\n');
+    const draft = document.createElement('a');
+    draft.href = 'mailto:info@serv-tec.co.za?subject=' + encodeURIComponent(subject) +
+      '&body=' + encodeURIComponent(body);
+    draft.textContent = 'Open the draft again';
+    status.replaceChildren('Your draft is ready to review. ', draft);
+    location.href = draft.href;
     status.focus();
   });
 }

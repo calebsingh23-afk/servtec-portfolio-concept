@@ -57,7 +57,7 @@ const routes = ['fleet-rentals.html','servicing-repairs.html','parts-fabrication
  check('Escape closes menu and returns focus',await page.locator('.menu').getAttribute('aria-expanded')==='false'&&await page.evaluate(()=>document.activeElement.classList.contains('menu')));
  await page.locator('.menu').click();await page.locator('nav a[href="./#services"]').click();check('mobile anchor closes menu',await page.locator('.menu').getAttribute('aria-expanded')==='false');
  for(const route of routes) {
-   await page.goto(`${base}/${route}`);check(`${route}: populated guide`,await page.locator('.detail-body li').count()>=3 && (await page.locator('h1').innerText()).length>10);
+   await page.goto(`${base}/${route}`);check(`${route}: populated guide`,await page.locator('.detail-topics article').count()>=3 && (await page.locator('h1').innerText()).length>10);
    check(`${route}: no overflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
    await page.locator('.detail-aside .button').click();
    check(`${route}: enquiry prefilled`,await page.locator('select[name="service"]').inputValue()===new URL(page.url()).searchParams.get('need'));
@@ -76,10 +76,12 @@ const routes = ['fleet-rentals.html','servicing-repairs.html','parts-fabrication
  await page.locator('button[type="submit"]').click();check('invalid fleet size rejected',await page.locator('[name="fleet"]').getAttribute('aria-invalid')==='true');await page.locator('[name="fleet"]').fill('3');
  const transmitted=[];page.on('request',r=>transmitted.push(r.url()));
  await page.locator('button[type="submit"]').click();await page.waitForTimeout(200);
- check('honest demo feedback',await page.locator('#form-status').getAttribute('data-valid')==='true'&&(await page.locator('#form-status').innerText()).includes('No enquiry was sent'));
- check('no submission traffic',transmitted.length===0,transmitted);
+ const draft = new URL(await page.locator('#form-status a').getAttribute('href'));
+ check('draft has the listed recipient and fleet details',draft.pathname==='info@serv-tec.co.za'&&draft.searchParams.get('body').includes('Fleet size: 3'));
+ check('no HTTP submission traffic',transmitted.every(url=>url.startsWith('mailto:')),transmitted);
  check('no website storage',await page.evaluate(()=>localStorage.length===0&&sessionStorage.length===0&&document.cookie===''));
- check('no live company contacts',await page.locator('a[href^="mailto:"],a[href^="tel:"]').count()===0);
+ check('workshop contact and directions',await page.locator('#contact a[href="tel:+27870580620"], #contact a[href="mailto:info@serv-tec.co.za"], #contact a[href^="https://www.google.com/maps/"]').count()===3);
+ check('customer-facing copy', !/portfolio|demo enquiry|AI assistance/i.test(await page.locator('body').innerText()));
  await page.screenshot({path:`${screenshots}/demo-feedback.png`});
  // Browser visibility is controlled through the DevTools lifecycle for a deterministic suspension check.
  const cdp=await context.newCDPSession(page);await cdp.send('Page.setWebLifecycleState',{state:'frozen'});await cdp.send('Page.setWebLifecycleState',{state:'active'});
@@ -100,3 +102,4 @@ const routes = ['fleet-rentals.html','servicing-repairs.html','parts-fabrication
  console.log(`${results.filter(r=>r.pass).length}/${results.length} checks passed`);console.log(JSON.stringify(results.filter(r=>!r.pass),null,2));
  await browser.close();process.exitCode=results.some(r=>!r.pass)?1:0;
 })().catch(error=>{console.error(error);process.exit(1);});
+
