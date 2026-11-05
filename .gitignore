@@ -1,0 +1,10 @@
+.openai/
+.vercel/
+.taste-skill/
+node_modules/
+.env*
+work/
+*.log
+
+.vercel
+.env*

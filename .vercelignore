@@ -1,0 +1,10 @@
+.git
+.openai
+.env*
+work
+docs
+content
+.taste-skill
+README.md
+VERIFICATION.md
+preview.cjs

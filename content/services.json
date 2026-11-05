@@ -1,0 +1,54 @@
+{
+  "rentals": {
+    "title": "Fleet rentals & sales",
+    "intro": "Motorcycles for the way your business delivers.",
+    "audience": "Delivery businesses, restaurants and private fleet owners planning their next motorcycles.",
+    "items": [
+      "Motorcycle fleet rental enquiries",
+      "Fleet sales enquiries",
+      "Branding requirements to discuss, subject to confirmation"
+    ],
+    "need": "Rent motorcycles",
+    "ask": "Tell us your fleet size, operating area, intended start date and whether you need rental or purchase options.",
+    "note": "Models, stock, rental terms, deposits, branding and what is included must be confirmed in a quotation."
+  },
+  "repairs": {
+    "title": "Servicing & repairs",
+    "intro": "Give your working motorcycles the attention they need.",
+    "audience": "Businesses maintaining a working fleet and individual owners with a motorcycle that needs attention.",
+    "items": [
+      "Fleet maintenance and motorcycle servicing",
+      "On-site servicing enquiries, subject to location and availability",
+      "Motorcycle repairs, rebuilds and accident repair enquiries"
+    ],
+    "need": "Service my fleet",
+    "ask": "Share the motorcycle model, the work or fault you need help with, your location and the number of motorcycles.",
+    "note": "Roadside assistance hours, coverage and availability have not been confirmed. Use general enquiries for planning; this is not an emergency dispatch channel."
+  },
+  "parts": {
+    "title": "Parts & fabrication",
+    "intro": "Find the right part. Discuss the right fit.",
+    "audience": "Fleet operators and motorcycle owners looking for spares, accessories or motorcycle-related fabrication.",
+    "items": [
+      "Spares and accessories enquiries",
+      "Delivery-box bracket requirements",
+      "Crash bars and steel fabrication requirements to discuss"
+    ],
+    "need": "Find parts or fabrication",
+    "ask": "Include the motorcycle make and model, the part or fabrication required, quantities and any measurements you have.",
+    "note": "Stock, compatibility, fabrication scope and lead times need to be confirmed. No specific part is advertised as available."
+  },
+  "support": {
+    "title": "Rider training & fleet support",
+    "intro": "Plan the support around your motorcycles.",
+    "audience": "Businesses reviewing rider needs, motorcycle procurement or the practical running of their fleets.",
+    "items": [
+      "Rider training and workshop enquiries",
+      "Motorcycle procurement consultancy enquiries",
+      "Discuss your fleet reporting requirements"
+    ],
+    "need": "Discuss another requirement",
+    "ask": "Tell us about your riders, fleet and operating area, and the outcome you are looking for.",
+    "note": "Training format, scope, reporting capabilities and availability require confirmation. No certification or particular reporting system is promised."
+  }
+}
