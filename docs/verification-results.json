@@ -1,0 +1,592 @@
+{
+  "base": "http://127.0.0.1:4174",
+  "browser": "156.0.8078.80",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "name": "desktop: no overflow or copy/image collision",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "copy": {
+          "x": 57.59375,
+          "y": 238.75,
+          "right": 675.46875,
+          "bottom": 672.359375,
+          "width": 617.875,
+          "height": 433.609375
+        },
+        "bike": {
+          "x": 734.7955322265625,
+          "y": 242.5343475341797,
+          "right": 1391.8126220703125,
+          "bottom": 686.8060150146484,
+          "width": 657.01708984375,
+          "height": 444.27166748046875
+        },
+        "action": {
+          "x": 57.59375,
+          "y": 560.375,
+          "right": 285.9375,
+          "bottom": 625.5625,
+          "width": 228.34375,
+          "height": 65.1875
+        },
+        "mode": "pinned",
+        "overlap": false,
+        "loaded": true
+      }
+    },
+    {
+      "name": "desktop: artwork loaded",
+      "pass": true
+    },
+    {
+      "name": "desktop: usable first-screen quote action",
+      "pass": true,
+      "details": {
+        "bottom": 625.5625,
+        "viewport": 900
+      }
+    },
+    {
+      "name": "desktop: suitable pinning",
+      "pass": true
+    },
+    {
+      "name": "tablet: no overflow or copy/image collision",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "copy": {
+          "x": 30.71875,
+          "y": 189.765625,
+          "right": 356.828125,
+          "bottom": 603.8125,
+          "width": 326.109375,
+          "height": 414.046875
+        },
+        "bike": {
+          "x": 376.828125,
+          "y": 276.640625,
+          "right": 737.265625,
+          "bottom": 516.921875,
+          "width": 360.4375,
+          "height": 240.28125
+        },
+        "action": {
+          "x": 30.71875,
+          "y": 441.828125,
+          "right": 240.765625,
+          "bottom": 503.015625,
+          "width": 210.046875,
+          "height": 61.1875
+        },
+        "mode": "static",
+        "overlap": false,
+        "loaded": true
+      }
+    },
+    {
+      "name": "tablet: artwork loaded",
+      "pass": true
+    },
+    {
+      "name": "tablet: usable first-screen quote action",
+      "pass": true,
+      "details": {
+        "bottom": 503.015625,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "tablet: suitable pinning",
+      "pass": true
+    },
+    {
+      "name": "narrow-mobile: no overflow or copy/image collision",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "copy": {
+          "x": 20,
+          "y": 171.59375,
+          "right": 300,
+          "bottom": 514.59375,
+          "width": 280,
+          "height": 343
+        },
+        "bike": {
+          "x": 20,
+          "y": 558.640625,
+          "right": 300,
+          "bottom": 745.296875,
+          "width": 280,
+          "height": 186.65625
+        },
+        "action": {
+          "x": 20,
+          "y": 403.40625,
+          "right": 214.046875,
+          "bottom": 464.59375,
+          "width": 194.046875,
+          "height": 61.1875
+        },
+        "mode": "static",
+        "overlap": false,
+        "loaded": true
+      }
+    },
+    {
+      "name": "narrow-mobile: artwork loaded",
+      "pass": true
+    },
+    {
+      "name": "narrow-mobile: usable first-screen quote action",
+      "pass": true,
+      "details": {
+        "bottom": 464.59375,
+        "viewport": 720
+      }
+    },
+    {
+      "name": "narrow-mobile: suitable pinning",
+      "pass": true
+    },
+    {
+      "name": "mobile: no overflow or copy/image collision",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "copy": {
+          "x": 20,
+          "y": 171.59375,
+          "right": 370,
+          "bottom": 445.8125,
+          "width": 350,
+          "height": 274.21875
+        },
+        "bike": {
+          "x": 20,
+          "y": 493.859375,
+          "right": 370,
+          "bottom": 727.1875,
+          "width": 350,
+          "height": 233.328125
+        },
+        "action": {
+          "x": 20,
+          "y": 384.625,
+          "right": 214.046875,
+          "bottom": 445.8125,
+          "width": 194.046875,
+          "height": 61.1875
+        },
+        "mode": "static",
+        "overlap": false,
+        "loaded": true
+      }
+    },
+    {
+      "name": "mobile: artwork loaded",
+      "pass": true
+    },
+    {
+      "name": "mobile: usable first-screen quote action",
+      "pass": true,
+      "details": {
+        "bottom": 445.8125,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "mobile: suitable pinning",
+      "pass": true
+    },
+    {
+      "name": "landscape: no overflow or copy/image collision",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "copy": {
+          "x": 33.75,
+          "y": 165.703125,
+          "right": 393.078125,
+          "bottom": 383.890625,
+          "width": 359.328125,
+          "height": 218.1875
+        },
+        "bike": {
+          "x": 413.078125,
+          "y": 144.796875,
+          "right": 803.078125,
+          "bottom": 404.796875,
+          "width": 390,
+          "height": 260
+        },
+        "action": {
+          "x": 33.75,
+          "y": 328.703125,
+          "right": 225.484375,
+          "bottom": 383.890625,
+          "width": 191.734375,
+          "height": 55.1875
+        },
+        "mode": "static",
+        "overlap": false,
+        "loaded": true
+      }
+    },
+    {
+      "name": "landscape: artwork loaded",
+      "pass": true
+    },
+    {
+      "name": "landscape: usable first-screen quote action",
+      "pass": true,
+      "details": {
+        "bottom": 383.890625,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "landscape: suitable pinning",
+      "pass": true
+    },
+    {
+      "name": "scroll 0: deterministic progress",
+      "pass": true,
+      "details": {
+        "p": 0.001,
+        "label": "Fleet rental",
+        "transform": "perspective(1400px) translate3d(2.5%, 1.5%, 0px) rotateY(-3deg) scale(0.965)"
+      }
+    },
+    {
+      "name": "scroll 0.1: deterministic progress",
+      "pass": true,
+      "details": {
+        "p": 0.101,
+        "label": "Fleet rental",
+        "transform": "perspective(1400px) translate3d(2.5%, 1.5%, 0px) rotateY(-3deg) scale(0.965)"
+      }
+    },
+    {
+      "name": "scroll 0.25: deterministic progress",
+      "pass": true,
+      "details": {
+        "p": 0.251,
+        "label": "Fleet rental",
+        "transform": "perspective(1400px) translate3d(2.29351%, 1.37611%, 0px) rotateY(-2.75221deg) scale(0.967891)"
+      }
+    },
+    {
+      "name": "scroll 0.5: deterministic progress",
+      "pass": true,
+      "details": {
+        "p": 0.501,
+        "label": "Servicing & repairs",
+        "transform": "perspective(1400px) translate3d(1.19566%, 0.717398%, 0px) rotateY(-1.4348deg) scale(0.983261)"
+      }
+    },
+    {
+      "name": "scroll 0.75: deterministic progress",
+      "pass": true,
+      "details": {
+        "p": 0.751,
+        "label": "Parts & fabrication",
+        "transform": "perspective(1400px) translate3d(0.147444%, 0.0884666%, 0px) rotateY(-0.176933deg) scale(0.997936)"
+      }
+    },
+    {
+      "name": "scroll 0.9: deterministic progress",
+      "pass": true,
+      "details": {
+        "p": 0.901,
+        "label": "Parts & fabrication",
+        "transform": "perspective(1400px) translate3d(0%, 0%, 0px) rotateY(0deg) scale(1)"
+      }
+    },
+    {
+      "name": "scroll 1: deterministic progress",
+      "pass": true,
+      "details": {
+        "p": 1,
+        "label": "Parts & fabrication",
+        "transform": "perspective(1400px) translate3d(0%, 0%, 0px) rotateY(0deg) scale(1)"
+      }
+    },
+    {
+      "name": "scroll 0.75: deterministic progress",
+      "pass": true,
+      "details": {
+        "p": 0.751,
+        "label": "Parts & fabrication",
+        "transform": "perspective(1400px) translate3d(0.147444%, 0.0884666%, 0px) rotateY(-0.176933deg) scale(0.997936)"
+      }
+    },
+    {
+      "name": "scroll 0.5: deterministic progress",
+      "pass": true,
+      "details": {
+        "p": 0.501,
+        "label": "Servicing & repairs",
+        "transform": "perspective(1400px) translate3d(1.19566%, 0.717398%, 0px) rotateY(-1.4348deg) scale(0.983261)"
+      }
+    },
+    {
+      "name": "scroll 0.25: deterministic progress",
+      "pass": true,
+      "details": {
+        "p": 0.251,
+        "label": "Fleet rental",
+        "transform": "perspective(1400px) translate3d(2.29351%, 1.37611%, 0px) rotateY(-2.75221deg) scale(0.967891)"
+      }
+    },
+    {
+      "name": "scroll 0: deterministic progress",
+      "pass": true,
+      "details": {
+        "p": 0.001,
+        "label": "Fleet rental",
+        "transform": "perspective(1400px) translate3d(2.5%, 1.5%, 0px) rotateY(-3deg) scale(0.965)"
+      }
+    },
+    {
+      "name": "scroll 1: deterministic progress",
+      "pass": true,
+      "details": {
+        "p": 1,
+        "label": "Parts & fabrication",
+        "transform": "perspective(1400px) translate3d(0%, 0%, 0px) rotateY(0deg) scale(1)"
+      }
+    },
+    {
+      "name": "scroll 0: deterministic progress",
+      "pass": true,
+      "details": {
+        "p": 0.001,
+        "label": "Fleet rental",
+        "transform": "perspective(1400px) translate3d(2.5%, 1.5%, 0px) rotateY(-3deg) scale(0.965)"
+      }
+    },
+    {
+      "name": "scroll 0.6: deterministic progress",
+      "pass": true,
+      "details": {
+        "p": 0.601,
+        "label": "Servicing & repairs",
+        "transform": "perspective(1400px) translate3d(0.705641%, 0.423385%, 0px) rotateY(-0.84677deg) scale(0.990121)"
+      }
+    },
+    {
+      "name": "sequential service labels",
+      "pass": true
+    },
+    {
+      "name": "refresh mid-sequence",
+      "pass": true,
+      "details": {
+        "p": 0.601,
+        "expected": 0.6007254464285714
+      }
+    },
+    {
+      "name": "resize removes pinning",
+      "pass": true
+    },
+    {
+      "name": "dynamic reduced motion removes pin and transform",
+      "pass": true
+    },
+    {
+      "name": "motion preference restores enhancement",
+      "pass": true
+    },
+    {
+      "name": "skip animation focuses service content",
+      "pass": true
+    },
+    {
+      "name": "skip anchor visible",
+      "pass": true
+    },
+    {
+      "name": "first keyboard stop is skip link",
+      "pass": true
+    },
+    {
+      "name": "keyboard skip focuses main",
+      "pass": true
+    },
+    {
+      "name": "mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "menu keyboard enters links",
+      "pass": true
+    },
+    {
+      "name": "Escape closes menu and returns focus",
+      "pass": true
+    },
+    {
+      "name": "mobile anchor closes menu",
+      "pass": true
+    },
+    {
+      "name": "fleet-rentals.html: populated guide",
+      "pass": true
+    },
+    {
+      "name": "fleet-rentals.html: no overflow",
+      "pass": true
+    },
+    {
+      "name": "fleet-rentals.html: enquiry prefilled",
+      "pass": true
+    },
+    {
+      "name": "servicing-repairs.html: populated guide",
+      "pass": true
+    },
+    {
+      "name": "servicing-repairs.html: no overflow",
+      "pass": true
+    },
+    {
+      "name": "servicing-repairs.html: enquiry prefilled",
+      "pass": true
+    },
+    {
+      "name": "parts-fabrication.html: populated guide",
+      "pass": true
+    },
+    {
+      "name": "parts-fabrication.html: no overflow",
+      "pass": true
+    },
+    {
+      "name": "parts-fabrication.html: enquiry prefilled",
+      "pass": true
+    },
+    {
+      "name": "rider-fleet-support.html: populated guide",
+      "pass": true
+    },
+    {
+      "name": "rider-fleet-support.html: no overflow",
+      "pass": true
+    },
+    {
+      "name": "rider-fleet-support.html: enquiry prefilled",
+      "pass": true
+    },
+    {
+      "name": "legacy query link preserved",
+      "pass": true
+    },
+    {
+      "name": "selector: Rent motorcycles",
+      "pass": true
+    },
+    {
+      "name": "selector: Service my fleet",
+      "pass": true
+    },
+    {
+      "name": "selector: Repair a motorcycle",
+      "pass": true
+    },
+    {
+      "name": "selector: Find parts or fabrication",
+      "pass": true
+    },
+    {
+      "name": "selector: Discuss another requirement",
+      "pass": true
+    },
+    {
+      "name": "empty form validation and focus",
+      "pass": true
+    },
+    {
+      "name": "invalid email rejected",
+      "pass": true
+    },
+    {
+      "name": "invalid fleet size rejected",
+      "pass": true
+    },
+    {
+      "name": "honest demo feedback",
+      "pass": true
+    },
+    {
+      "name": "no submission traffic",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "no website storage",
+      "pass": true
+    },
+    {
+      "name": "no live company contacts",
+      "pass": true
+    },
+    {
+      "name": "tab freeze/resume leaves interactions available",
+      "pass": true
+    },
+    {
+      "name": "no-JS homepage and safe form",
+      "pass": true
+    },
+    {
+      "name": "no-JS fleet-rentals.html: useful content",
+      "pass": true
+    },
+    {
+      "name": "no-JS servicing-repairs.html: useful content",
+      "pass": true
+    },
+    {
+      "name": "no-JS parts-fabrication.html: useful content",
+      "pass": true
+    },
+    {
+      "name": "no-JS rider-fleet-support.html: useful content",
+      "pass": true
+    },
+    {
+      "name": "no-JS services.html: useful content",
+      "pass": true
+    },
+    {
+      "name": "failed artwork fallback",
+      "pass": true
+    },
+    {
+      "name": "delayed-media layout stability",
+      "pass": true,
+      "details": {
+        "measuredCLS": 0,
+        "delayMs": 700
+      }
+    },
+    {
+      "name": "no JavaScript errors",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "no HTTP errors",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "badResponses": []
+}

@@ -1,18 +1,39 @@
-# Verification record
+# Verification — 5 November 2026
 
-## Latest local checks — visual revision
+## Local checks actually run
 
-Passed using a local headless browser via Chrome DevTools Protocol (taste skill driver): 1440px, 900px and 390px viewports; no horizontal overflow or copy/image-column overlap; new 1536px-wide transparent image loaded; intermediate scroll transforms and backwards reversal observed. Reduced-motion mode confirmed `transform: none` and matching scene/hero heights, eliminating the extra scroll runway. Desktop and mobile screenshots were visually inspected. Syntax check passed after the animation update. These checks do not constitute Playwright verification. The hero now uses continuous movement of one clean image; the former eight-frame sprite no longer drives it.
+83/83 automated checks passed using local Playwright and installed Chrome 156.0.8078.80. This is desktop browser emulation, not physical-device testing.
 
-## Earlier checks and limitations
+Viewports: 1440×900 desktop, 768×1024 tablet, 320×720 narrow mobile, 390×844 mobile and 844×390 short landscape. All five had no horizontal overflow or motorcycle/copy collision, loaded artwork, appropriate static/pinned mode and an on-screen primary quote action.
 
-- `node --check dist/app.js`: passed.
-- Local file references in both HTML documents: checked for existence and passed.
-- Generated motorcycle sprite: visually inspected; cropped to individual frame bounds and compressed. Eight poses are a limited prototype and do not meet the final dense, smooth sequence requirement.
-- Playwright: navigation to the Windows local preview attempted; failed with `ERR_CONNECTION_TIMED_OUT`. The browser is remote and could not access localhost on this computer.
-- A subsequent proposal to load the site into the remote browser was rejected by automatic approval review because transferring full source and imagery was considered unapproved sensitive egress. No claim of successful visual or interaction verification is made.
-- Desktop/mobile layouts, keyboard access, enquiry validation interactions, contact clicks, reduced motion, intermediate scroll states and loading stability remain to be checked in a browser with approved access.
-- Sites registration succeeded and its project ID is retained in `.openai/hosting.json`. The source workflow did not complete or produce a verified pushed commit/archive; publication was not completed. Do not treat the expected URL as live.
-- Live enquiry delivery, final-domain HTTPS and HTTP redirects have not been verified.
+Checked native scroll progress at 0, 10, 25, 50, 75, 90 and 100%, then reverse and abrupt jumps. Verified three sequential service labels, refresh partway through the story, resizing from desktop to mobile, live reduced-motion preference changes, services anchor positioning and focus, first keyboard skip link, mobile menu keyboard entry, Escape and return focus.
 
-Before launch, run the browser checks from the brief using an approved local browser or grant access to the remote verification environment. Replace temporary branding and imagery, confirm service/contact facts and choose a direct form destination if required.
+All four detail pages loaded with useful content and prefilled their matching enquiry. Legacy `services.html?service=parts` navigation resolved correctly. All five need selectors and conditional fleet-size visibility worked. Checked empty submission, invalid email and fleet size, valid fictional input, explicit “no enquiry was sent” feedback, zero submission requests and no cookies/localStorage/sessionStorage. No live mailto or telephone links remained.
+
+Verified homepage and every guide with JavaScript disabled; the form controls remain disabled. Blocked motorcycle requests to exercise the failure message. Delayed artwork by 700 ms to measure layout stability: CLS 0.0000 in that specific run. This is not a general performance score. No JavaScript exceptions or HTTP errors were observed during the normal run.
+
+The browser lifecycle was frozen and resumed to check continued interaction. Offscreen/hidden-tab suspension was reviewed in code (IntersectionObserver, document.hidden, cancellation of the pending frame). No real-device frame-rate or battery benchmark was performed.
+
+## Design and motion review
+
+| Before | After | Why |
+| --- | --- | --- |
+| Long fixed mobile hero and empty scroll travel | Content-sized static mobile hero; desktop travel limited to 280px | Reach service information sooner |
+| 2.46MB hero PNG on every screen | Responsive 145KB / 453KB WebP with PNG fallback | Reduce transfer while preserving alpha edges |
+| Motorcycle without a separate ground layer | Small perspective shift and independent contact shadow | Give the existing still artwork controlled depth |
+| Unconfirmed live-company contact actions | Explicit portfolio context and validation-only form | Avoid mistaken enquiries or false sending confirmations |
+| Service content populated only by JavaScript | Four complete static HTML guides plus an index | Keep information usable when JavaScript fails |
+| Tiny captions and repetitive split sections | Larger notes, filled service rows, open process columns and grouped FAQs | Improve hierarchy and reading rhythm |
+
+Motion review: approve the scoped implementation from code and browser checks. Only the product and its shadow move with scroll; controls have brief press feedback. No decorative section entrances, smooth-scroll hijacking or perpetual animation loop. Keyboard focus/menu actions are immediate. Reduced motion removes movement.
+
+Applied Emil design-engineering and animation-performance guidance. Considered MotionSites and Hallmark references without importing paid media or whole templates. The design-taste draw selected “The well-kept board”, seed 1143156083. It informed the grouped service/FAQ surfaces; the brief’s required two-column hero, restrained motion and existing palette took precedence over conflicting generic recipes.
+
+The automated taste inspector ran at 1440, 768 and 390px. Its first pass flagged a three-line workshop slogan and small captions, which were revised. Its requirements for four photographs, eight moving elements and no portfolio banner conflict with this brief’s limited verified media, restrained motion and explicit demo notice, so those are deliberately not followed. Its lint also labels the required contact-shadow variable as a shadow violation. These tools are design heuristics, not accessibility certification. No claim of a zero-warning taste inspection is made.
+
+## Limits
+
+- Chromium/Chrome only; no Safari, Firefox or physical phone testing.
+- No claim of WCAG certification, Lighthouse score or measured 60fps performance.
+- Concept artwork and business details remain unverified; no real company enquiry was sent.
+- Public deployment verification is pending and will be appended after publishing.
