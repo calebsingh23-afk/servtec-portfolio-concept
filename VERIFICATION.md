@@ -36,4 +36,12 @@ The automated taste inspector ran at 1440, 768 and 390px. Its first pass flagged
 - Chromium/Chrome only; no Safari, Firefox or physical phone testing.
 - No claim of WCAG certification, Lighthouse score or measured 60fps performance.
 - Concept artwork and business details remain unverified; no real company enquiry was sent.
-- Public deployment verification is pending and will be appended after publishing.
+- Deployed preview returned HTTP 200 through authenticated Vercel CLI. Core interaction checks were performed locally; a full authenticated remote-browser interaction run was not performed.
+
+## Final delivery status
+
+The source, preserved baseline, before/after screenshots and verification script were pushed to https://github.com/calebsingh23-afk/servtec-portfolio-concept. The GitHub connector successfully read the published README. The local preview was opened in a visible Chrome window with automatic reload on file changes.
+
+Protected preview: https://servtec-portfolio-concept-g0bh0gycf-caleb-5fb0.vercel.app
+
+Vercel reports READY, Preview target, productionUrl null and vercel_authentication protection. The temporary production-labelled setup deployment was deleted after creating the preview. The earlier unintended first deployment was also deleted. No production site remains deployed by this work. Authenticated HTTP verification returned 200 with the expected homepage. Local Playwright remains 83/83 checks. No Git auto-deployment connection was configured.

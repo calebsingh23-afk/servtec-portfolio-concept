@@ -68,8 +68,14 @@ node scripts/verify.cjs
 
 Set `TEST_URL` to a deployed URL to exercise that deployment. Test data is fictional. The script generates screenshots and a JSON report.
 
-## Vercel
+## Publishing status
 
 Dedicated project: `servtec-portfolio-concept`, existing `caleb-5fb0` Hobby team. No paid services, custom domains or upgrades. `vercel.json` serves `dist/` without a build command. Local account/project files and environment tokens are ignored by Git and deployment uploads.
 
-Publishing status and the verified URL are recorded in the final verification notes after deployment; do not infer a URL from the project name.
+**Protected Preview ready:** https://servtec-portfolio-concept-g0bh0gycf-caleb-5fb0.vercel.app
+
+This is a Vercel Preview deployment, not a production launch. Vercel authentication remains enabled. The prerequisite staged setup deployment was removed after the preview was created. No Git auto-deployment connection was configured.
+
+Repository: https://github.com/calebsingh23-afk/servtec-portfolio-concept
+
+Local preview: http://127.0.0.1:4174
