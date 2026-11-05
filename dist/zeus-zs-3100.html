@@ -4,13 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,follow">
-  <meta name="description" content="Explore the white Zeus ZS-3100 flip-up motorcycle helmet in 3D at ServTec.">
+  <meta name="description" content="Explore the white Zeus ZS-3100 flip-up motorcycle helmet from four angles at ServTec.">
   <title>Zeus ZS-3100 Helmet | ServTec</title>
   <link rel="icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="helmet.css">
   <script src="app.js" defer></script>
-  <script src="helmet-viewer.js" type="module"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -27,27 +26,21 @@
   <main id="main" class="helmet-page wrap">
     <a class="text-link" href="./#rider-gear">← Rider gear</a>
     <div class="helmet-layout">
-      <div class="helmet-media">
+      <fieldset class="helmet-media">
+        <legend class="helmet-gallery-title">Product photos</legend>
         <div class="helmet-stage">
-          <img class="helmet-fallback" src="assets/zeus-zs-3100.png" alt="White Zeus ZS-3100 helmet shown from the front and side" width="800" height="650">
-          <canvas tabindex="0" aria-label="Rotate the Zeus helmet with the arrow keys or by dragging"></canvas>
-          <span class="helmet-stage-tag" aria-hidden="true">ZEUS / 3100</span>
+          <svg class="helmet-photo" data-angle="front" viewBox="86 36 475 508" role="img" aria-label="Front view of the white Zeus ZS-3100 helmet"><title>Front view of the white Zeus ZS-3100 helmet</title><defs><clipPath id="helmet-front-outline"><path transform="translate(12 4) scale(.963 .985)" d="M 320,50 C 377,49 423,70 453,106 C 474,127 490,155 496,185 C 511,192 514,216 519,250 C 530,310 519,370 489,427 C 469,467 423,504 366,532 C 344,544 324,544 302,541 C 268,534 216,507 184,468 C 143,419 124,363 124,309 C 124,266 125,213 140,189 C 146,158 167,117 191,95 C 228,65 273,51 320,50 Z"/></clipPath></defs><image href="assets/helmet-front.png" width="640" height="544" clip-path="url(#helmet-front-outline)"/></svg>
+          <svg class="helmet-photo" data-angle="left" viewBox="83 65 439 439" role="img" aria-label="Left side view of the white Zeus ZS-3100 helmet"><title>Left side view of the white Zeus ZS-3100 helmet</title><image href="assets/helmet-right.png" width="598" height="541"/></svg>
+          <svg class="helmet-photo" data-angle="right" viewBox="99 68 439 439" role="img" aria-label="Right side view of the white Zeus ZS-3100 helmet"><title>Right side view of the white Zeus ZS-3100 helmet</title><image href="assets/helmet-left.png" width="634" height="573"/></svg>
+          <svg class="helmet-photo" data-angle="rear" viewBox="61 57 421 421" role="img" aria-label="Rear view of the white Zeus ZS-3100 helmet"><title>Rear view of the white Zeus ZS-3100 helmet</title><image href="assets/helmet-rear.png" width="564" height="544"/></svg>
         </div>
-        <div class="helmet-controls" role="group" aria-label="Helmet viewing controls" hidden>
-          <div class="helmet-angles">
-            <button type="button" data-view="overview" aria-pressed="true">Overview</button>
-            <button type="button" data-view="front" aria-pressed="false">Front</button>
-            <button type="button" data-view="side" aria-pressed="false">Side</button>
-            <button type="button" data-view="rear" aria-pressed="false">Rear</button>
-            <button type="button" data-view="underside" aria-pressed="false">Underside</button>
-          </div>
-          <div class="helmet-zoom">
-            <button type="button" data-zoom="-1" aria-label="Zoom out">−</button>
-            <button type="button" data-zoom="1" aria-label="Zoom in">+</button>
-          </div>
+        <div class="helmet-controls">
+          <label><input type="radio" name="helmet-angle" value="front" checked><span>Front</span></label>
+          <label><input type="radio" name="helmet-angle" value="left"><span>Left side</span></label>
+          <label><input type="radio" name="helmet-angle" value="right"><span>Right side</span></label>
+          <label><input type="radio" name="helmet-angle" value="rear"><span>Rear</span></label>
         </div>
-        <p id="helmet-status" class="helmet-help" role="status">Drag the model or use the arrow keys to look around.</p>
-      </div>
+      </fieldset>
       <section class="helmet-info" aria-labelledby="helmet-title">
         <p class="hero-kicker">New arrival · Rider gear</p>
         <h1 id="helmet-title">Zeus ZS-3100</h1>
@@ -59,7 +52,6 @@
           <div><dt>Visors</dt><dd>Outer shield and internal sun visor</dd></div>
         </dl>
         <a class="button" href="mailto:info@serv-tec.co.za?subject=Zeus%20ZS-3100%20helmet%20enquiry">Ask about sizes and stock <span aria-hidden="true">↗</span></a>
-        <p class="helmet-caption">Illustrative 3D model. Check fit and finish in store.</p>
       </section>
     </div>
   </main>
