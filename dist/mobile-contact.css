@@ -1,0 +1,15 @@
+.mobile-contact{display:none}.fleet-more{margin-top:28px}
+@media(max-width:700px){
+  body{padding-bottom:calc(80px + env(safe-area-inset-bottom,0px))}
+  html{scroll-padding-bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+  .mobile-contact{position:fixed;inset:auto 0 0;z-index:45;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:#142c48;border-top:1px solid #40536e}
+  .mobile-contact a{display:flex;align-items:center;justify-content:center;min-height:48px;color:#fff;font-size:14px;font-weight:650;border:1px solid #6d7d93;border-radius:5px}
+  .mobile-contact .mobile-enquire{color:#142c48;background:#f8f8f4;border-color:#f8f8f4}
+  body:has(.menu[aria-expanded="true"]) .mobile-contact,
+  body:has(dialog[open]) .mobile-contact,
+  body:has([aria-modal="true"]:not([hidden])) .mobile-contact,
+  body:has(input:focus,textarea:focus,select:focus,[contenteditable="true"]:focus) .mobile-contact,
+  .mobile-contact[data-obscured="true"]{display:none}
+}
+@media(max-width:700px){.js nav.mobile-contact{display:grid;position:fixed;inset:auto 0 0}.js body:has(.menu[aria-expanded="true"],dialog[open],[aria-modal="true"]:not([hidden]),input:focus,textarea:focus,select:focus,[contenteditable="true"]:focus) nav.mobile-contact,.js nav.mobile-contact[data-obscured="true"]{display:none}}
+@media(max-width:700px){.js nav.mobile-contact{padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));margin:0;gap:8px}.mobile-contact a{padding:0 8px;margin:0;min-height:48px}.mobile-contact a:focus-visible{outline-offset:-4px}}

@@ -8,3 +8,8 @@ content
 README.md
 VERIFICATION.md
 preview.cjs
+
+.vercel
+owner-review
+video-review
+scripts

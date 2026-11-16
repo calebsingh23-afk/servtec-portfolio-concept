@@ -8,3 +8,7 @@ work/
 
 .vercel
 .env*
+
+owner-review/
+video-review/
+*.png.tmp

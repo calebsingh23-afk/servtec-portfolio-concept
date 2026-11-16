@@ -50,6 +50,9 @@ function selectNeed(value) {
   form.elements.service.value = value;
   document.querySelectorAll('[data-need]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.need === value)));
   const hasFleet = value === 'Rent motorcycles' || value === 'Service my fleet';
+  $('#rental-context').hidden = value !== 'Rent motorcycles';
+  form.elements.bike.disabled = value !== 'Rent motorcycles';
+  form.elements.rentalOption.disabled = value !== 'Rent motorcycles';
   $('#fleet-field').hidden = !hasFleet;
   form.elements.fleet.disabled = !hasFleet;
   form.elements.fleet.removeAttribute('aria-invalid');
@@ -61,7 +64,13 @@ if (form) {
   form.querySelector('fieldset').disabled = false;
   document.querySelectorAll('[data-need]').forEach(button => button.addEventListener('click', () => selectNeed(button.dataset.need)));
   form.elements.service.addEventListener('change', event => selectNeed(event.target.value));
-  const need = new URLSearchParams(location.search).get('need');
+  const params = new URLSearchParams(location.search);
+  const need = params.get('need');
+  fieldsFromRentalLink();
+  function fieldsFromRentalLink() {
+    form.elements.bike.value = (params.get('bike') || '').slice(0,120);
+    form.elements.rentalOption.value = (params.get('rental') || '').slice(0,120);
+  }
   selectNeed([...form.elements.service.options].some(option => option.value === need) ? need : form.elements.service.value);
   form.addEventListener('input', event => {
     const field = event.target;
@@ -100,6 +109,8 @@ if (form) {
       '',
       'I would like to enquire about: ' + fields.service.value,
       '',
+      !fields.bike.disabled && fields.bike.value.trim() && 'Bike: ' + fields.bike.value.trim(),
+      !fields.rentalOption.disabled && fields.rentalOption.value.trim() && 'Rental option: ' + fields.rentalOption.value.trim(),
       fields.message.value.trim(),
       '',
       'Name: ' + fields.name.value.trim(),
