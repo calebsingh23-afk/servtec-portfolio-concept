@@ -2,11 +2,10 @@
 .helmet-layout { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); margin-top: 1.5rem; align-items: center; }
 .helmet-media { margin: 0; padding: 0; border: 0; min-width: 0; }
 .helmet-gallery-title { padding: 0; margin-bottom: .65rem; color: #4b5f78; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-.helmet-stage { display: grid; place-items: center; aspect-ratio: 1.22; overflow: hidden; border: 1px solid #dce3ec; border-radius: .8rem; background: white; }
+.helmet-stage { display: grid; place-items: center; aspect-ratio: 1.22; overflow: hidden; border: 1px solid #dce3ec; border-radius: .8rem; background: #000; }
 .helmet-photo { display: none; width: 86%; height: 90%; max-height: 500px; }
 .helmet-media:has([value="front"]:checked) [data-angle="front"],
-.helmet-media:has([value="left"]:checked) [data-angle="left"],
-.helmet-media:has([value="right"]:checked) [data-angle="right"],
+.helmet-media:has([value="side"]:checked) [data-angle="side"],
 .helmet-media:has([value="rear"]:checked) [data-angle="rear"] { display: block; }
 .helmet-controls { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .8rem; }
 .helmet-controls label { position: relative; cursor: pointer; }
@@ -23,10 +22,19 @@
 .helmet-details dd { margin: 0; font-weight: 650; }
 .gear-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 5rem); align-items: center; padding-block: 4rem; }
 .gear-feature h2 { margin: .55rem 0; }
-.gear-photo { display: block; width: 100%; height: auto; aspect-ratio: 1.45; background: white; border: 1px solid #dce3ec; border-radius: .75rem; }
+.gear-photo { display: block; width: 100%; height: auto; aspect-ratio: 1.45; background: #000; border: 1px solid #dce3ec; border-radius: .75rem; }
 @media (max-width: 820px) {
   .helmet-layout, .gear-feature { grid-template-columns: minmax(0, 1fr); }
-  .helmet-info { grid-row: 1; }
+  .helmet-info { grid-row: auto; }
   .helmet-page { padding-block: 1.5rem 3rem; }
   .gear-feature { padding-block: 2.5rem; }
 }
+
+.helmet-stock { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(2rem,5vw,5rem); align-items:center; margin-top:5rem; padding-top:3rem; border-top:1px solid #d3deed; }
+.helmet-stock > img { width:100%; height:auto; max-height:720px; object-fit:contain; border-radius:.8rem; }
+.helmet-stock h2 { font-size:clamp(2.5rem,4vw,4rem); line-height:1; margin:.7rem 0; }
+.helmet-stock p { max-width:42ch; }
+.helmet-poster { margin-top:2rem; border-top:1px solid #d3deed; padding-top:1rem; }
+.helmet-poster summary { cursor:pointer; padding:.5rem 0; font-weight:650; }
+.helmet-poster img { display:block; width:100%; max-width:360px; height:auto; margin-top:1rem; border-radius:.5rem; }
+@media(max-width:820px) { .helmet-stock { grid-template-columns:1fr; margin-top:3rem; } }
