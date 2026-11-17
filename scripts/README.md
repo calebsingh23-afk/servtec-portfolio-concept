@@ -17,3 +17,9 @@ Optional screenshots require `SCREENSHOT_DIR` pointing to a local directory outs
 `verify.cjs` is a historical suite with outdated layout/content assertions; it also uses the safe email interceptor. Use the three current checks above for this version.
 
 Coverage: Chrome viewport simulation at 320, 390, 481, 768 and 1440px; form flows at 390/1440px; gallery, brochure, navigation, contact-bar clearance, reduced motion and no-JavaScript content. Physical phones, Safari and a real mobile keyboard/safe-area device remain manual checks.
+
+Mobile emulation: run node scripts/check-devices.cjs. Uses Pixel 7 with installed Chrome and iPhone 13 with WebKit if installed; unavailable engines are reported explicitly. These are emulated devices. Native picker text wrapping, on-screen keyboards, real safe areas and physical touch behaviour still need device testing.
+
+Performance lab: node scripts/measure-mobile.cjs; see PERFORMANCE.md for conditions and results. No website runtime dependencies are required.
+
+Verified 17 November 2026: Pixel 7/Chrome and iPhone 13/WebKit 27.2 (Playwright revision 2391) both passed portrait and landscape. Matching WebKit installed via the existing Playwright CLI install webkit, including FFmpeg and Winldd in the user browser cache. This is Windows-hosted WebKit emulation, not Safari on a physical iPhone.

@@ -32,3 +32,5 @@ module.exports = {...playwright, chromium: new Proxy(playwright.chromium, {get(t
     return browser;
   };
 }})};
+
+module.exports.protect = protect;
