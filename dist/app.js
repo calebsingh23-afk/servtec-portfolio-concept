@@ -46,16 +46,24 @@ document.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener(
 
 const form = $('#quote-form');
 // Use the catalogue options; never accept arbitrary prices from enquiry URLs.
+function updateRentalVisibility() {
+  if (!form) return;
+  const select = form.elements.rentalOption;
+  const relevant = form.elements.service.value === 'Rent motorcycles' && select.options.length > 1;
+  $('#rental-context').hidden = !relevant;
+  select.disabled = !relevant;
+}
 function updateRentalOptions(preferred = '') {
   if (!form) return;
   const bike = illustrativeBikes.find(item => 'Illustrative example: ' + item.model === form.elements.bike.value);
   const select = form.elements.rentalOption;
   select.replaceChildren(new Option('Please advise me', 'Please advise me'));
-  bike?.options.forEach(value => {
+  bike?.options?.forEach(value => {
     const label = 'Illustrative example: ' + value;
     select.add(new Option(label, label));
   });
   if ([...select.options].some(option => option.value === preferred)) select.value = preferred;
+  updateRentalVisibility();
 }
 function applyBikeSelection(bike, rental) {
   if (!form) return;
@@ -69,8 +77,7 @@ function selectNeed(value) {
   const hasBike = value === 'Rent motorcycles' || value === 'Buy a motorcycle';
   $('#bike-field').hidden = !hasBike;
   form.elements.bike.disabled = !hasBike;
-  $('#rental-context').hidden = value !== 'Rent motorcycles';
-  form.elements.rentalOption.disabled = value !== 'Rent motorcycles';
+  updateRentalVisibility();
   $('#fleet-field').hidden = !hasFleet;
   form.elements.fleet.disabled = !hasFleet;
   form.elements.fleet.removeAttribute('aria-invalid');
