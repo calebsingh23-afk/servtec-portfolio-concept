@@ -48,7 +48,6 @@ const form = $('#quote-form');
 function selectNeed(value) {
   if (!form) return;
   form.elements.service.value = value;
-  document.querySelectorAll('[data-need]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.need === value)));
   const hasFleet = value === 'Rent motorcycles' || value === 'Service my fleet';
   $('#rental-context').hidden = value !== 'Rent motorcycles';
   form.elements.bike.disabled = value !== 'Rent motorcycles';
@@ -62,7 +61,6 @@ function selectNeed(value) {
 if (form) {
   // The HTML fieldset remains disabled if JavaScript cannot initialise.
   form.querySelector('fieldset').disabled = false;
-  document.querySelectorAll('[data-need]').forEach(button => button.addEventListener('click', () => selectNeed(button.dataset.need)));
   form.elements.service.addEventListener('change', event => selectNeed(event.target.value));
   const params = new URLSearchParams(location.search);
   const need = params.get('need');
