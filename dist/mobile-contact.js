@@ -31,8 +31,7 @@
     e.preventDefault();
     if (chosen) {
       selectNeed(chosen.get('need'));
-      form.elements.bike.value=chosen.get('bike');
-      form.elements.rentalOption.value=chosen.get('rental');
+      applyBikeSelection(chosen.get('bike'), chosen.get('rental'));
       chosen=null;updateLink();
     }
     const section=document.getElementById('enquire');

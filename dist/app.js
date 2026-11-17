@@ -45,12 +45,31 @@ document.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener(
 }));
 
 const form = $('#quote-form');
+// Use the catalogue options; never accept arbitrary prices from enquiry URLs.
+function updateRentalOptions(preferred = '') {
+  if (!form) return;
+  const bike = illustrativeBikes.find(item => 'Illustrative example: ' + item.model === form.elements.bike.value);
+  const select = form.elements.rentalOption;
+  select.replaceChildren(new Option('Please advise me', 'Please advise me'));
+  bike?.options.forEach(value => {
+    const label = 'Illustrative example: ' + value;
+    select.add(new Option(label, label));
+  });
+  if ([...select.options].some(option => option.value === preferred)) select.value = preferred;
+}
+function applyBikeSelection(bike, rental) {
+  if (!form) return;
+  form.elements.bike.value = [...form.elements.bike.options].some(option => option.value === bike) ? bike : '';
+  updateRentalOptions(rental);
+}
 function selectNeed(value) {
   if (!form) return;
   form.elements.service.value = value;
   const hasFleet = value === 'Rent motorcycles' || value === 'Service my fleet';
+  const hasBike = value === 'Rent motorcycles' || value === 'Buy a motorcycle';
+  $('#bike-field').hidden = !hasBike;
+  form.elements.bike.disabled = !hasBike;
   $('#rental-context').hidden = value !== 'Rent motorcycles';
-  form.elements.bike.disabled = value !== 'Rent motorcycles';
   form.elements.rentalOption.disabled = value !== 'Rent motorcycles';
   $('#fleet-field').hidden = !hasFleet;
   form.elements.fleet.disabled = !hasFleet;
@@ -64,11 +83,12 @@ if (form) {
   form.elements.service.addEventListener('change', event => selectNeed(event.target.value));
   const params = new URLSearchParams(location.search);
   const need = params.get('need');
-  fieldsFromRentalLink();
-  function fieldsFromRentalLink() {
-    form.elements.bike.value = (params.get('bike') || '').slice(0,120);
-    form.elements.rentalOption.value = (params.get('rental') || '').slice(0,120);
-  }
+  illustrativeBikes.forEach(bike => {
+    const label = 'Illustrative example: ' + bike.model;
+    form.elements.bike.add(new Option(label, label));
+  });
+  form.elements.bike.addEventListener('change', () => updateRentalOptions());
+  applyBikeSelection(params.get('bike'), params.get('rental'));
   selectNeed([...form.elements.service.options].some(option => option.value === need) ? need : form.elements.service.value);
   form.addEventListener('input', event => {
     const field = event.target;
