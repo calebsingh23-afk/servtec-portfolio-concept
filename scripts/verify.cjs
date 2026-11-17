@@ -1,5 +1,5 @@
 const fs = require('node:fs');
-const { chromium } = require(process.env.PLAYWRIGHT_PATH || 'playwright');
+const { chromium } = require('./safe-playwright.cjs');
 const root = require('node:path').resolve(__dirname, '..');
 const base = process.env.TEST_URL || 'http://127.0.0.1:4174';
 const screenshots = root + '/docs/screenshots';
