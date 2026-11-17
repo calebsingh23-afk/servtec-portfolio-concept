@@ -130,3 +130,6 @@ html:not(.js) .need-options{display:none}
 @media (max-width: 620px) {
   #services .service-list { grid-template-columns: 1fr; }
 }
+
+/* Preserve word separation when the mobile heading hides its line break. */
+@media(max-width:700px){.enquiry h2{font-size:clamp(44px,11vw,54px);line-height:1.08;letter-spacing:0;word-spacing:.04em;max-width:10ch}}
